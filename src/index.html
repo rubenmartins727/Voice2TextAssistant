@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Voice to Text Assistant</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f2f2f2; /* Cinza claro */
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    h1 {
+      color: #333;
+    }
+
+    #card {
+      background: white;
+      padding: 20px;
+      margin: 20px 0;
+      border-radius: 8px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      height: 200px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .button {
+      background-color: #4CAF50; /* Verde */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+      border-radius: 4px;
+    }
+
+    .button-stop {
+      background-color: #f44336; /* Vermelho */
+    }
+    
+    .button:not(:last-child) {
+      margin-right: 10px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    #transcription {
+      margin-top: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      width: 100%;
+      min-height: 50px;
+      color: #333;
+      background-color: #fff;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Voice to Text Assistant</h1>
+    <div id="card">Aqui será integrado o assistente visual.</div>
+    <div id="transcription">Texto transcrito aparecerá aqui...</div>
+    <div class="buttons">
+      <button id="start-btn" class="button">Falar</button>
+      <button id="stop-btn" class="button button-stop">Parar</button>
+    </div>
+  </div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>
